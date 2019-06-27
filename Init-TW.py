@@ -29,16 +29,27 @@ class blkColors:
 # list of packags to install
 packages = {
     "Multimedia_Codecs": (
-        "k3b-codecs",
-        "ffmpeg",
+        "ffmpeg-4",
         "ffmpegthumbs",
-        "phonon-backend-vlc",
-        "phonon4qt5-backend-vlc",
-        "libdvdcss2",
+        "ffmpeg-4",
+        "ffmpegthumbs",
         "libxine2-codecs",
+        "gstreamer",
+        "gstreamer-plugins-bad",
+        "gstreamer-plugins-base",
+        "gstreamer-plugins-good",
+        "gstreamer-plugins-good-extra",
+        "gstreamer-plugins-good-gtk",
+        "gstreamer-plugins-libav",
+        "gstreamer-plugins-qt5",
+        "gstreamer-plugins-ugly",
+        "vlc-codec-gstreamer",
+        
     ),
     "Multimedia_Applications": (
         "vlc",
+        "phonon-backend-vlc",
+        "phonon4qt5-backend-vlc",
         "obs-studio",
         "kaffeine",
         "kodi",
@@ -61,9 +72,8 @@ packages = {
         "wine",
     ),
     "Antivirus": ("clamav", "clamtk"),
-    "Internet_Applications": ("chromium", "chromium-pepper-flash", "flash-player"),
+    "Internet_Applications": ("chromium", "flash-player-ppapi", "flash-player"),
     "Utilities": (
-        "unison",
         "dropbox",
         "krename",
         "kdeconnect-kde",
