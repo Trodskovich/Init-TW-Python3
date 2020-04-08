@@ -1,8 +1,8 @@
 # ------------------------------------------------------------------------------------------------------------------------------
-# Init-TW-Python3 v1.2
+# Init-TW-Python3 v1.4
 # To Initialize New Tumbleweed Installation.
 # Authour: Trodskovich
-#requires python3-newt and newt preinstalled
+# requires python3-newt and newt preinstalled
 # Run at your own Risk
 # ------------------------------------------------------------------------------------------------------------------------------
 
