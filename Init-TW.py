@@ -137,7 +137,7 @@ def select_packages():
     result = g.runOnce()
     screen.finish()
 
-    # print(result)
+    # format selected packages list for zypper  and print(result)
     sellist = (
         str(ct.getSelection())
         .replace("[", "")
@@ -165,7 +165,7 @@ def select_packages():
     return bb.buttonPressed(result)
 
 
-# to start & Eable Services
+# to start & Enable Services
 def startups():
     print(
         blkColors.Blue
