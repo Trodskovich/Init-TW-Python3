@@ -19,7 +19,7 @@ class blkColors:
     Header = "\033[95m"
     Blue = "\033[94m"
     Green = "\033[92m"
-    warning = "\033[93m"
+    Warning = "\033[93m"
     Error = "\033[91m"
     EndC = "\033[0m"
     Bold = "\033[1m"
@@ -225,13 +225,16 @@ def init():
     chkdup = dup()
 
     if pkad == "add":
-        subprocess.call(
+        repoError=subprocess.call(
             [
                 "sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ Packman"
             ],
             shell=True,
         )
-        print(blkColors.Green + "\nPackman Repo Added\n" + blkColors.EndC)
+        if repoError==0:
+            print(blkColors.Green + "\nPackman Repo Added\n" + blkColors.EndC)
+        else:
+            print(blkColors.Error + "\nFailed to add Packman Repo Added\n" + blkColors.EndC)
     else:
         print(blkColors.Error + "\nPackman Repo Skipped\n" + blkColors.EndC)
     print(blkColors.Blue + "\nRefreshing Repos...\n" + blkColors.EndC)
