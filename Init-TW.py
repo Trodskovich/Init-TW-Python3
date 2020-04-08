@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------------------------------------------------------
-# Init-TW-Python3 v1.
+# Init-TW-Python3 v1.2
 # To Initialize New Tumbleweed Installation.
 # Authour: Trodskovich
 #requires python3-newt and newt preinstalled
@@ -31,8 +31,6 @@ packages = {
     "Multimedia_Codecs": (
         "ffmpeg-4",
         "ffmpegthumbs",
-        "ffmpeg-4",
-        "ffmpegthumbs",
         "libxine2-codecs",
         "gstreamer",
         "gstreamer-plugins-bad",
@@ -41,14 +39,12 @@ packages = {
         "gstreamer-plugins-good-extra",
         "gstreamer-plugins-good-gtk",
         "gstreamer-plugins-libav",
-        "gstreamer-plugins-qt5",
         "gstreamer-plugins-ugly",
         "vlc-codec-gstreamer",
         
     ),
     "Multimedia_Applications": (
         "vlc",
-        "phonon-backend-vlc",
         "phonon4qt5-backend-vlc",
         "obs-studio",
         "kaffeine",
@@ -67,7 +63,6 @@ packages = {
         "ibus-m17n",
         "git",
         "git-gui",
-        "artha",
         "wordnet",
         "wine",
     ),
