@@ -1,8 +1,8 @@
 # ------------------------------------------------------------------------------------------------------------------------------
-# Init-TW-Python3 v1.2
+# Init-TW-Python3 v1.4
 # To Initialize New Tumbleweed Installation.
 # Authour: Trodskovich
-#requires python3-newt and newt preinstalled
+# requires python3-newt and newt preinstalled
 # Run at your own Risk
 # ------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,11 +83,11 @@ def welcome():
     screen = SnackScreen()
     bb = ButtonBar(screen, (("Continue", "continue"), ("Cancel", "cancel")))
     tb = Textbox(
-        60,
+        65,
         4,
-        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications and Enabling & Starting Services.",
+        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications, Enabling & Starting Services, \nand Performing Distrubution Update.",
     )
-    g = GridForm(screen, "TW-Init - by Trodoskovich", 1, 4)
+    g = GridForm(screen, "TW-Init - by Trodskovich", 1, 4)
 
     g.add(tb, 0, 2)
     g.add(bb, 0, 3, growx=1)
@@ -102,9 +102,9 @@ def add_repo():
     screen = SnackScreen()
     bb = ButtonBar(screen, (("Add", "add"), ("Cancel", "cancel")))
     tb = Textbox(
-        60,
+        50,
         4,
-        "Multimedia Codecs and Applications require packman Repositary to be added in order to work. \nDo you want add Packman repo now ?",
+        "Multimedia Applications and Codecs require Packman Repositary to be added in order to work correctly. \nDo you want add Packman repo now ?",0,1,
     )
     g = GridForm(screen, "Packman Repo", 1, 4)
 
