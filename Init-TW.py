@@ -85,7 +85,7 @@ def welcome():
     tb = Textbox(
         65,
         4,
-        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications, Enabling & Starting Services, \nand Performing Distrubution Update."
+        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications, Enabling & Starting Services, \nand Performing Distrubution Update.",
     )
     g = GridForm(screen, "TW-Init - by Trodskovich", 1, 4)
 
@@ -104,7 +104,7 @@ def add_repo():
     tb = Textbox(
         50,
         5,
-        "Multimedia Applications and Codecs require Packman Repositary to be added in order to work correctly. \nDo you want add Packman repo now ?",0,1
+        "Multimedia Applications and Codecs require Packman Repositary to be added in order to work correctly. \nDo you want add Packman repo now ?",0,1,
     )
     g = GridForm(screen, "Packman Repo", 1, 4)
 
