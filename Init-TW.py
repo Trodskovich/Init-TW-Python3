@@ -85,7 +85,7 @@ def welcome():
     tb = Textbox(
         65,
         4,
-        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications, Enabling & Starting Services, \nand Performing Distrubution Update.",
+        "Python Script to Initialize New openSUSE Tumbleweed Installation,\nlike Installing Applications, Enabling & Starting Services, \nand Performing Distrubution Update."
     )
     g = GridForm(screen, "TW-Init - by Trodskovich", 1, 4)
 
@@ -103,8 +103,8 @@ def add_repo():
     bb = ButtonBar(screen, (("Add", "add"), ("Cancel", "cancel")))
     tb = Textbox(
         50,
-        4,
-        "Multimedia Applications and Codecs require Packman Repositary to be added in order to work correctly. \nDo you want add Packman repo now ?",0,1,
+        5,
+        "Multimedia Applications and Codecs require Packman Repositary to be added in order to work correctly. \nDo you want add Packman repo now ?",0,1
     )
     g = GridForm(screen, "Packman Repo", 1, 4)
 
@@ -149,11 +149,11 @@ def select_packages():
     screen = SnackScreen()
     bb = ButtonBar(screen, (("Next", "next"), ("Cancel", "cancel")))
     tb = Textbox(
-        60,
+        80,
         10,
         "the packages selected to install are \n \n" + str(sellist.split(" ")),
         1,
-        1,
+        1
     )
     g = GridForm(screen, "Selected Packages", 1, 4)
 
@@ -199,7 +199,7 @@ def dup():
     screen = SnackScreen()
     bb = ButtonBar(screen, (("Yes", "yes"), ("No", "no")))
     tb = Textbox(
-        100,
+        70,
         4,
         "It's recomended to run the Distribution Update after Initiliazation. \nDo you want to run Distribution Update after Initiliazation ?",
     )
