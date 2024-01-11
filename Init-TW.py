@@ -45,7 +45,7 @@ packages = {
         "gstreamer-plugins-ugly",
         "gstreamer-plugins-ugly-orig-addon",
         "vlc-codec-gstreamer",
-        "vlc-codec",
+        "vlc-codecs",
         
     ),
     "Multimedia_Applications": (
@@ -79,10 +79,12 @@ packages = {
         "wine",
         "tmux",
         "screen",
-        "yakuake"
+        "yakuake",
+        "ntfs-3g",
+        "ntfsprogs",
     ),
     "Antivirus": ("clamav", "clamtk"),
-    "Internet_Applications": ("chromium", "flash-player-ppapi", "flash-player"),
+    "Internet_Applications": ("chromium", "flash-player"),
     "Utilities": (
         "dropbox",
         "krename",
