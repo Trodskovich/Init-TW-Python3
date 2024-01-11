@@ -91,6 +91,7 @@ packages = {
         "filelight",
         "sweeper",
         "ktorrent"
+        "konversation",
     ),
 }
 
