@@ -45,6 +45,7 @@ packages = {
         "gstreamer-plugins-ugly",
         "gstreamer-plugins-ugly-orig-addon",
         "vlc-codec-gstreamer",
+        "vlc-codec",
         
     ),
     "Multimedia_Applications": (
