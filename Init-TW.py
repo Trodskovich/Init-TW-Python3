@@ -52,7 +52,6 @@ packages = {
         "vlc",
         "phonon4qt5-backend-vlc",
         "obs-studio",
-        "kaffeine",
         "kodi",
         "kdenlive",
         "audacity",
@@ -92,7 +91,7 @@ packages = {
         "imagewriter",
         "filelight",
         "sweeper",
-        "ktorrent"
+        "ktorrent",
         "konversation",
     ),
 }
