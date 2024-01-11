@@ -29,9 +29,12 @@ class blkColors:
 # list of packags to install
 packages = {
     "Multimedia_Codecs": (
-        "ffmpeg-4",
+        "lame",
+        "libdvdcss2",
+        "ffmpeg-6",
         "ffmpegthumbs",
         "libxine2-codecs",
+        "libavdevice60",
         "gstreamer",
         "gstreamer-plugins-bad",
         "gstreamer-plugins-base",
@@ -40,6 +43,7 @@ packages = {
         "gstreamer-plugins-good-gtk",
         "gstreamer-plugins-libav",
         "gstreamer-plugins-ugly",
+        "gstreamer-plugins-ugly-orig-addon",
         "vlc-codec-gstreamer",
         
     ),
@@ -56,7 +60,9 @@ packages = {
         "krita",
         "elisa",
         "amarok",
-        "smplayer"
+        "smplayer",
+        "smplayer-themes",
+        "smplayer-skins",
     ),
     "Multimedia_Convertors": ("handbrake-gtk", "winff"),
     "Core_Applications": (
