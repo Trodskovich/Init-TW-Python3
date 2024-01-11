@@ -52,6 +52,11 @@ packages = {
         "kdenlive",
         "audacity",
         "inkscape",
+        "gimp",
+        "krita",
+        "elisa",
+        "amarok",
+        "smplayer"
     ),
     "Multimedia_Convertors": ("handbrake-gtk", "winff"),
     "Core_Applications": (
@@ -65,6 +70,9 @@ packages = {
         "git-gui",
         "wordnet",
         "wine",
+        "tmux",
+        "screen",
+        "yakuake"
     ),
     "Antivirus": ("clamav", "clamtk"),
     "Internet_Applications": ("chromium", "flash-player-ppapi", "flash-player"),
@@ -75,6 +83,7 @@ packages = {
         "imagewriter",
         "filelight",
         "sweeper",
+        "ktorrent"
     ),
 }
 
@@ -188,9 +197,9 @@ def startups():
         + "\nEnabling and starting Clamav Antivirus Daemon [clamd] and Defintion update Daemon [freshclam] to autostart...\n"
         + blkColors.EndC
     )
-    subprocess.call(["sudo systemctl enable clamd"], shell=True)
+    #subprocess.call(["sudo systemctl enable clamd"], shell=True)
     subprocess.call(["sudo systemctl enable freshclam"], shell=True)
-    subprocess.call(["sudo systemctl start clamd"], shell=True)
+    #subprocess.call(["sudo systemctl start clamd"], shell=True)
     return True
 
 
@@ -227,7 +236,7 @@ def init():
     if pkad == "add":
         repoError=subprocess.call(
             [
-                "sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ Packman"
+                "sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/packman/suse/openSUSE_Tumbleweed/ Packman"
             ],
             shell=True,
         )
@@ -246,7 +255,7 @@ def init():
         print(blkColors.Error + "\nNo Packages Selected\n" + blkColors.EndC)
     else:
         print(blkColors.Blue + "\nInstalling Selected Packages...\n" + blkColors.EndC)
-        subprocess.call(["sudo zypper in " + sellist], shell=True)
+        subprocess.call(["sudo zypper in -ly " + sellist], shell=True)
 
     startups()
 
