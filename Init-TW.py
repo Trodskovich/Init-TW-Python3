@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------------------------------------------------------
-# Init-TW-Python3 v1.4
+# Init-TW-Python3 v2.0
 # To Initialize New Tumbleweed Installation.
 # Authour: Trodskovich
 # requires python3-newt and newt preinstalled
@@ -26,11 +26,10 @@ class blkColors:
     Undeline = "\033[4m"
 
 
-# list of packags to install
+# list of packages to install
 packages = {
     "Multimedia_Codecs": (
         "lame",
-        "libdvdcss2",
         "ffmpeg-6",
         "ffmpegthumbs",
         "libxine2-codecs",
@@ -46,8 +45,9 @@ packages = {
         "gstreamer-plugins-ugly-orig-addon",
         "vlc-codec-gstreamer",
         "vlc-codecs",
-        
+
     ),
+
     "Multimedia_Applications": (
         "vlc",
         "phonon4qt5-backend-vlc",
@@ -64,7 +64,9 @@ packages = {
         "smplayer-themes",
         "smplayer-skins",
     ),
+
     "Multimedia_Convertors": ("handbrake-gtk", "winff"),
+
     "Core_Applications": (
         "zip",
         "unzip",
@@ -83,7 +85,9 @@ packages = {
         "ntfsprogs",
     ),
     "Antivirus": ("clamav", "clamtk"),
-    "Internet_Applications": ("chromium", "flash-player"),
+
+    "Internet_Applications": ("chromium", "flash-player", "filezilla"),
+
     "Utilities": (
         "dropbox",
         "krename",
@@ -94,6 +98,7 @@ packages = {
         "ktorrent",
         "konversation",
     ),
+
 }
 
 # to show a welcome screen
