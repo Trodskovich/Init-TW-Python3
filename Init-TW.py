@@ -88,7 +88,7 @@ packages = {
     ),
     "Antivirus": ("clamav", "clamtk"),
 
-    "Internet_Applications": ("chromium", "flash-player", "filezilla"),
+    "Internet_Applications": ("chromium", "flash-player", "filezilla", "MozillaThunderbird"),
 
     "Utilities": (
         "dropbox",
