@@ -83,6 +83,8 @@ packages = {
         "yakuake",
         "ntfs-3g",
         "ntfsprogs",
+        "libnotify-tools",
+        "xdotool",
     ),
     "Antivirus": ("clamav", "clamtk"),
 
