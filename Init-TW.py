@@ -86,6 +86,7 @@ packages = {
         "libnotify-tools",
         "xdotool",
     ),
+
     "Antivirus": ("clamav", "clamtk"),
 
     "Internet_Applications": ("chromium", "flash-player", "filezilla", "MozillaThunderbird"),
@@ -100,6 +101,8 @@ packages = {
         "ktorrent",
         "konversation",
     ),
+
+    "Misc": ("fontawesome-fonts"),
 
 }
 
