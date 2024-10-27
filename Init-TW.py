@@ -50,7 +50,7 @@ packages = {
 
     "Multimedia_Applications": (
         "vlc",
-        "phonon4qt6-backend-vlc",
+        "phonon-vlc-qt6",
         "obs-studio",
         "kodi",
         "kdenlive",
