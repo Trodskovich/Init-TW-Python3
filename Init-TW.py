@@ -30,7 +30,7 @@ class blkColors:
 packages = {
     "Multimedia_Codecs": (
         "lame",
-        "ffmpeg-6",
+        "ffmpeg-7",
         "ffmpegthumbs",
         "libxine2-codecs",
         "libavdevice60",
@@ -50,7 +50,7 @@ packages = {
 
     "Multimedia_Applications": (
         "vlc",
-        "phonon4qt5-backend-vlc",
+        "phonon4qt6-backend-vlc",
         "obs-studio",
         "kodi",
         "kdenlive",
