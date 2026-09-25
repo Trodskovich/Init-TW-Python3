@@ -1,0 +1,74 @@
+# --- Init-TW-Python3 Package Configuration v3.x.x compatible---
+
+# --- Packages List ---
+Packages:
+    Multimedia_Codecs:
+    - ffmpeg
+    - ffmpegthumbs
+    - gstreamer
+    - gstreamer-plugins-bad
+    - gstreamer-plugins-base
+    - gstreamer-plugins-good
+    - gstreamer-plugins-good-extra
+    - gstreamer-plugins-libav
+    - gstreamer-plugins-ugly
+    - vlc-codec-gstreamer
+    - chromium-ffmpeg-extra
+    - pipewire-aptx
+
+    Multimedia_Applications:
+    - vlc
+    - smplayer
+    - libphonon4qt6
+    - phonon4qt6-backend-mpv
+    - obs-studio
+    - kodi
+    - kdenlive
+    - audacity
+    - inkscape
+
+    Multimedia_Convertors:
+    - handbrake-gtk
+    - winff
+
+    Core_Applications:
+    - zip
+    - unzip
+    - rar
+    - unrar
+    - fish
+    - ibus-m17n
+    - git
+    - git-gui
+    - artha
+    - wordnet
+    - wine
+
+    Antivirus:
+    - clamav
+    - clamtk
+
+    Internet_Applications:
+    - chromium
+    - MozillaThunderbird
+
+    Utilities:
+    - dropbox-cli
+    - krename
+    - kdeconnect-kde
+    - imagewriter
+    - filelight
+    - sweeper
+
+# --- Generic System Configurations & Initializations ---
+System_Mods:
+  User_Commands:
+    - "chsh -s /usr/bin/fish {USER}"
+  Root_Commands:
+    - "chsh -s /usr/bin/fish root"
+    - "freshclam"
+
+# --- Explicit Service Matrix Management ---
+Services:
+    clamd: "enable --now"
+    freshclam.timer: "enable --now"
